@@ -1,142 +1,60 @@
-brac = 0
+from operator import sub
 
-q1 = "Vraag 1: What is a correct syntax to output 'Hello World' in Python?"
-q2 = "Vraag 2: How do you insert COMMENTS in Python code?"
-q3 = "Vraag 3: Which one is NOT a legal variable name?"
-q4 = "How do you create a variable with the numeric value 5?"
-q5 = "What is the correct file extension for Python files?"
-q6 = "How do you create a variable with the floating number 2.8?"
-q7 = "What is the correct syntax to output the type of a variable or object in Python?"
-q8 = "What is the correct way to create a function in Python?"
-q9 = "In Python, 'Hello', is the same as ''Hello''. ('' are Double quotes)"
-q10 = "What is a correct syntax to return the first character in a string?"
-q11 = "Which method can be used to remove any whitespace from both the beginning and the end of a string?"
-q12 = "Which method can be used to return a string in upper case letters?"
-q13 = "Which method can be used to replace parts of a string?"
-q14 = "Which operator is used to multiply numbers?"
-q15 = "Which operator can be used to compare two values?"
-q16 = "Which of these collections defines a LIST?"
-q17 = "Which of these collections defines a TUPLE?"
-q18 = "Which of these collections defines a SET?"
-q19 = "Which of these collections defines a DICTIONARY?"
-q20 = "Which collection is ordered, changeable, and allows duplicate members?"
-q21 = "Which collection does not allow duplicate members?"
-q22 = "How do you start writing an if statement in Python?"
-q23 = "How do you start writing a while loop in Python?"
-q24 = "How do you start writing a for loop in Python?"
-q25 = "Which statement is used to stop a loop?"
 
-q1a1 = "p('Hello World')"
-q1a2 = "print('Hello World')"
-q1a3 = "echo 'Hello World'"
-q1a4 = "echo('Hello World');"
-
-q2a1 = "/*This is a comment*/" 
-q2a2 = "#This is a comment"
-q2a3 = "//This is a comment"
-
-q3a1 = "my_var" 
-q3a2 = "Myvar"
-q3a3 = "_myvar"
-q3a4 = "my-var"
-
-q4a1 = "x = 5" 
-q4a2 = "x = int(5)"
-q4a3 = "Both the other answers are correct"
-
-q5a1 = ".pyt" 
-q5a2 = ".pt"
-q5a3 = ".py"
-q5a4 = ".pyth"
-
-q6a1 = "Both the other answers are correct" 
-q6a2 = "x = 2.8"
-q6a3 = "x = float(2.8)"
-
-q7a1 = "print(type(x))" 
-q7a2 = "print(typeOf(x))"
-q7a3 = "print(typeof(x))"
-q7a4 = "print(typeof x)"
-
-q8a1 = "create myFunction():" 
-q8a2 = "def myFunction():"
-q8a3 = "function myfunction():"
-
-q9a1 = "False" 
-q9a2 = "True"
-
-q10a1 = "x = sub('Hello', 0, 1)" 
-q10a2 = "x = 'Hello'.sub(0, 1)"
-q10a3 = "x = 'Hello'[0]"
-
-q11a1 = "strip()"
-q11a2 = "len()"
-q11a3 = "ptrim()"
-q11a4 = "trim()"
-
-q12a1 = "upper()"
-q12a2 = "upperCase()"
-q12a3 = "uppercase()"
-q12a4 = "toUpperCase()"
-
-q13a1 = "replace()"
-q13a2 = "repl()"
-q13a3 = "switch()"
-q13a4 = "replaceString()"
-
-q14a1 = "x"
-q14a2 = "#"
-q14a3 = "%"
-q14a4 = "*"
-
-q15a1 = "><"
-q15a2 = "="
-q15a3 = "<>"
-q15a4 = "=="
-
-q16a1 = "('apple', 'banana', 'cherry')"
-q16a2 = "['apple', 'banana', 'cherry']"
-q16a3 = "{'name': 'apple', 'color': 'green'}"
-q16a4 = "{'apple', 'banana', 'cherry'}"
-
-q17a1 = "{'name': 'apple', 'color': 'green'}"
-q17a2 = "('apple', 'banana', 'cherry')"
-q17a3 = "['apple', 'banana', 'cherry']"
-q17a4 = "{'apple', 'banana', 'cherry'}"
-
-q18a1 = "{'name': 'apple', 'color': 'green'}"
-q18a2 = "['apple', 'banana', 'cherry']"
-q18a3 = "{'apple', 'banana', 'cherry'}"
-q18a4 = "('apple', 'banana', 'cherry')"
-
-q19a1 = "['apple', 'banana', 'cherry']"
-q19a2 = "{'apple', 'banana', 'cherry'}"
-q19a3 = "{'name': 'apple', 'color': 'green'}"
-q19a4 = "('apple', 'banana', 'cherry')"
-
-q20a1 = "SET"
-q20a2 = "LIST"
-q20a3 = "TUPLE"
-q20a4 = "DICTIONARY"
-
-q21a1 = "LIST"
-q21a2 = "SET"
-q21a3 = "TUPLE"
-
-q22a1 = "if (x > y)"
-q22a2 = "if x > y:"
-q22a3 = "if x > y then:"
-
-q23a1 = "if (x > y)"
-q23a2 = "while x > y {"
-q23a3 = "while x > y:"
-q23a4 = "x > y while {"
-
-q24a1 = "for x > y:"
-q24a2 = "for x in y:"
-q24a3 = "for each x in y:"
-
-q25a1 = "stop"
-q25a2 = "break"
-q25a3 = "return"
-q25a4 = "exit"
+questions=[
+    "What is a correct syntax to output \"Hello World\" in Python?",
+    "How do you insert COMMENTS in Python code?",
+    "Which one is NOT a legal variable name?",
+    "How do you create a variable with the numeric value 5?",
+    "What is the correct file extension for Python files?",
+    "How do you create a variable with the floating number 2.8?",
+    "What is the correct syntax to output the type of a variable or object in Python?",
+    "What is the correct way to create a function in Python?",
+    "In Python, 'Hello', is the same as \"Hello\"",
+    "What is a correct syntax to return the first character in a string?",
+    "Which method can be used to remove any whitespace from both the beginning and the end of a string?",
+    "Which method can be used to return a string in upper case letters?",
+    "Which method can be used to replace parts of a string?",
+    "Which operator is used to multiply numbers?",
+    "Which operator can be used to compare two values?",
+    "Which of these collections defines a LIST?",
+    "Which of these collections defines a TUPLE?",
+    "Which of these collections defines a SET?",
+    "Which of these collections defines a DICTIONARY?",
+    "Which collection is ordered, changeable, and allows duplicate members?",
+    "Which collection does not allow duplicate members?",
+    "How do you start writing an if statement in Python?",
+    "How do you start writing a while loop in Python?",
+    "How do you start writing a for loop in Python?",
+    "Which statement is used to stop a loop?"
+]
+response = ["0"] * len(questions)
+answers =[
+    [ "print(\"Hello World\")", "echo \"Hello World\"", "echo(\"Hello World\");", "p(\"Hello World\")" ],
+    [ "//This is a comment", "/*This is a comment*/", "#This is a comment" ],
+    [ "my-var", "_myvar", "my_var", "Myvar" ],
+    [ "Both the other answers are correct", "x = int(5)", "x = 5" ],
+    [ ".py", ".pt", ".pyt", ".pyth" ],
+    [ "Both the other answers are correct","x = 2.8", "x = float(2.8)" ],
+    [ "print(typeof(x))", "print(type(x))","print(typeof x)", "print(typeOf(x))"],
+    [ "def myFunction():", "create myFunction():", "function myFunction():" ],
+    [ "True", "False" ],
+    [ "x = \"Hello\"[0]", "x = \"Hello\".sub(0, 1)", "x = sub(\"Hello\", 0, 1)" ],
+    [ "trim()", "len()", "ptrim()", "strip()" ],
+    [ "upper()", "uppercase()", "upperCase()", "toUpperCase()" ],
+    [ "replace()", "switch()", "repl()", "replaceString()" ],
+    [ "*", "#", "x", "%" ],
+    [ "=", "><", "<>", "==" ],
+    [ "[\"apple\", \"banana\", \"cherry\"] ", "{\"apple\", \"banana\", \"cherry\"}", "{\"name\": \"apple\", \"color\": \"green\"}", "(\"apple\", \"banana\", \"cherry\")" ],
+    [ "(\"apple\", \"banana\", \"cherry\")", "[\"apple\", \"banana\", \"cherry\"]", "{\"name\": \"apple\", \"color\": \"green\"}", "{\"apple\", \"banana\", \"cherry\"}" ],
+    [ "{\"apple\", \"banana\", \"cherry\"}", "(\"apple\", \"banana\", \"cherry\")", "[\"apple\", \"banana\", \"cherry\"]", "{\"name\": \"apple\", \"color\": \"green\"}" ],
+    [ "{\"name\": \"apple\", \"color\": \"green\"} ", "[\"apple\", \"banana\", \"cherry\"]", "{\"apple\", \"banana\", \"cherry\"}", "(\"apple\", \"banana\", \"cherry\")" ],
+    [ "LIST", "SET", "DICTIONARY", "TUPLE" ],
+    [ "SET", "LIST", "TUPLE" ],
+    [ "if x > y:", "if (x > y)", "if x > x then:" ],
+    [ "while x > y:", "while x > y {", "x > y while {", "while (x > y)" ],
+    [ "for x in y:", "for x > y:", "for each x in x:" ],
+    [ "break", "return", "exit", "stop" ]
+]
+correctanwsers = [ "a","c","a","a","a","a","b","a","a","a","d","a","a","a","d","a","a","a","a","a","a","a","a","a","a" ]
+anwserblock = ["A: ","B: ", "C: ", "D: "]
